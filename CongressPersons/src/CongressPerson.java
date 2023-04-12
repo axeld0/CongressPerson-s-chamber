@@ -35,11 +35,19 @@ public abstract class CongressPerson extends Person{
         this.politicalParty = politicalParty;
     }
 
+
+    /**
+     * Gives the congressperson's info to the user.
+     * @return
+     */
     @Override
     public String toString()
     {
         return super.toString() + " Province = "+ state +"Party = "+politicalParty +"}";
     }
 
+    /**
+     * abstract method that gets the chamber in witch the congressperson works.
+     */
     public abstract String getChamber ();
 }
